@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis William</title>
+    <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+    .header {
+        position: fixed;
+        z-index: 1;
+        width: 50%;
+        left: 25%;
+        right: 25%;
+        text-align: center;
+        background-color: #494951;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #ccc;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #04AA6D;
+        width: 0%;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    body {
+        background-color: #5A5A5A;
+        color: white;
+    }
+    fieldset {
+        display: inline-block;
+        border-radius: 15px;
+    }
+
+    .schoollogos {
+        width: 100px;
+        height: 50px;
+        display: flex;
+        padding-left: 20px;
+    }
+
+    @media screen and (max-width:768px) { /* Responsive CSS for the blog */
+        .removepic {
+            display: none;
+        }
+    }
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: #ADD8E6;
+    }
+</style>
+<body class="w3-center w3-sans-serif w3-animate-bottom w3-animate-opacity"> <!--One div at a time; Rule 8: Reduces short term memory load-->
+    <div class="header">
+        <h1>Dennis William</h1>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="w3-container w3-lightblue w3-center w3-margin" style="display: flex;justify-content: center;">
+        <div class="w3-margin w3-card">
+           <img src="me2.jpg" alt="denniswilliam" title="hello there" width="200" class="removepic">
+        </div>
+        <div class="w3-margin w3-card" style="justify-content: center;">
+            <img src="me.jpg" alt="denniswilliam" width="200" style="height: auto;" class="onlypic">
+        </div>
+        <div class="w3-margin w3-card">
+            <img src="me3.jpg" alt="denniswilliam" width="200" class="removepic">
+        </div>
+    </div>
+    <h3>Dennis William</h3> 
+    <div class="gender">
+        <fieldset style="width: 60%;"> <!-- Consistent usage of fieldset -->
+            <legend><h3>2702342211 - L1BC</h3></legend>   
+        <p>My name is Dennis William. I was born in Jakarta, and I'm currently a <b><i><u>happy</u></i></b> 18 year old! My parents grew up in Medan and decided to come to Jakarta to seek for job opportunities. That is when I popped into this world! On age 5, I finally learned how to read and write, even though I was still slightly struggling on maths. Before I know it, time flies so fast I am already in a university studying Computer Science! I would love to know what awaits me in life. I would like to make this blog section a little bit longer so I will just shoutout the people who I dear. Firstly, my parents. I cannot thank them enough for allowing me to study in Binus, a really prestigious Indonesian university. I would also thank them for raising me tirelessly, handling my clumsiness sometimes and being patient with me overall, up until today. Next, my sisters. Although siblings are terribly annoying most of the time (yes this applies to my sisters unfortunately) but I love my sisters dearly and would do anything to protect them. Finally, my friends. My friends plays a huge role into making my life a lot more fun and vibrant. I love my friends because they are very much needed in everyone's life and they would be the one there whenever you feel down.</p><!--My blog section-->
+        <input type="radio" id="gender" name="gender" value="male" checked> Male
+        <br>
+        <input type="radio" id="gender" name="gender" value="female" disabled> Female
+        <br>
+        </fieldset>
+    <br><br>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+
+        $("#discordsubmit").click(function () { /*Rule 3 Informative Feedback */
+            alert("Unfortunately I still haven't build a database to keep your tags, but I will build one soon. Thank you for reaching out :)");
+        })
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
+

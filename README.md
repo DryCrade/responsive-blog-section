@@ -1,1 +1,1 @@
-# responsive-blog-section
+This is my improved portfolio with a blog section. I also made sure to make the blog entirely responsive to improve the user experience. Check it out!
